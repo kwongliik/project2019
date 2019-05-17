@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ stok.stok }}{% endblock %}
+
+{% block breadcrumb %}
+  <li class="breadcrumb-item"><a href="{% url 'home' %}">Pembekal</a></li>
+  <li class="breadcrumb-item"><a href="{% url 'stoks' stok.pembekal.pk %}">{{ stok.pembekal.pembekal }}</a></li>
+  <li class="breadcrumb-item active">{{ stok.stok }}</li>
+{% endblock %}
+
+{% block content %}
+  <div class="mb-4">
+    <a href="{% url 'new_inventori' stok.pembekal.pk stok.pk %}" class="btn btn-primary" role="button">New inventori</a>
+  </div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Inventori</th>
+        <th>Harga</th>
+        <th>Kuantiti</th>
+        <th>Created by</th>
+        <th>Created at</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% include 'includes/inventori_list.html' %}
+    </tbody>
+  </table>
+{% endblock %}

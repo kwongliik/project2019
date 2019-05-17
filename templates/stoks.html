@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  {{ pembekal.pembekal }} - {{ block.super }}
+{% endblock %}
+
+{% block breadcrumb %}
+  <li class="breadcrumb-item"><a href="{% url 'home' %}">Pembekal</a></li>
+  <li class="breadcrumb-item active">{{ pembekal.pembekal }}</li>
+{% endblock %}
+
+{% block content %}
+  <div class="mb-4">
+    <a href="{% url 'new_stok' pembekal.pk %}" class="btn btn-primary">New stok</a>
+  </div>
+
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>ID stok</th>
+        <th>Stok</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for stok in pembekal.stoks.all %}
+        <tr>
+          <td>{{ stok.pk }}</td>
+          <td><a href="{% url 'inventoris' pembekal.pk stok.pk %}">{{ stok.stok }}</a></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
