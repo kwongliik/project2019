@@ -20,6 +20,8 @@ from accounts import views as accounts_views
 from inventori import views
 from django_filters.views import FilterView
 from inventori.filters import UserFilter, InventoriFilter
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.home, name='home'),
@@ -54,5 +56,9 @@ urlpatterns = [
     path('pembekal/<int:pk>/stok/<int:stok_pk>/inventori/<int:inventori_pk>/delete/', views.InventoriDeleteView.as_view(), name='delete_inventori'),
     path('search_user/', FilterView.as_view(filterset_class=UserFilter, template_name='filter_user_list.html'), name='search_user'),
     path('search_inventori/', FilterView.as_view(filterset_class=InventoriFilter, template_name='filter_inventori_list.html'), name='search_inventori'),
+    path('upload_image/', accounts_views.simple_upload, name='upload_image'),
     path('admin/', admin.site.urls),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

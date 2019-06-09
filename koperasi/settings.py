@@ -157,3 +157,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 SECURE_CONTENT_TYPE_NOSNIFF = True
 SECURE_BROWSER_XSS_FILTER = True
 X_FRAME_OPTIONS = 'DENY'
+
+MEDIA_URL = '/user_pictures/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'user_pictures')

@@ -4,10 +4,24 @@
 
 {% load static %}
 
+{% block stylesheet %}
+  <style type="text/css">
+    @media print {
+      form, #title_filter {display: none;}
+    }
+
+    @media screen {
+      #title_report {display: none;}
+    }
+  </style>
+{% endblock %}
+
 {% block content %}
+  <h4 style="margin-top: 0" id="title_filter">Filter user list</h4>
+  <h4 style="margin-top: 0" id="title_report">User list report</h4>
+  <h6 id="time"></h6>
   <form method="get">
     <div class="well">
-      <h4 style="margin-top: 0">Filter user list</h4>
       <div class="row">
         <div class="form-group col-sm-4 col-md-3">
           {{ filter.form.username.label_tag }}
@@ -39,7 +53,10 @@
       <button type="submit" class="btn btn-primary">
         Search
       </button>&nbsp;
-      <button type="button" class="btn btn-primary" id="btnPrint">
+      <!--button type="button" class="btn btn-primary" id="btnPrint">
+        Print
+      </button-->&nbsp;
+      <button type="button" class="btn btn-primary" onclick="window.print();">
         Print
       </button>
     </div>

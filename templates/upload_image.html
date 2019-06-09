@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block breadcrumb %}
+  <li class="breadcrumb-item active">Upload user picture</li>
+{% endblock %}
+
+{% block content %}
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="myfile" onchange="showButton()">
+    <input type="submit" class="btn btn-sm btn-primary" value="Upload" id="upload" style="visibility:hidden">
+  </form>
+
+  {% if uploaded_image_url %}
+    <p>Image uploaded at: <a href="{{ uploaded_image_url }}">{{ uploaded_image_url }}</a></p>
+  {% endif %}
+  
+  <p><a href="{% url 'home' %}">Return to home</a></p>
+
+{% endblock %}
