@@ -4,8 +4,6 @@ Sains Komputer Project 2019
 
 First, clone the repository to your local machine:
 
-Change the "staticfiles" folder name to "static"
-
 git clone https://github.com/kwongliik/project2019.git
 
 Install the requirements:
