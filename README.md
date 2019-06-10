@@ -1,6 +1,6 @@
-# Sains Komputer Project2019
+# Computer Science Project 2019
 
-Sains Komputer Project 2019
+Computer Science Project 2019
 
 First, clone the repository to your local machine:
 
@@ -23,3 +23,5 @@ Finally, run the development server:
 python manage.py runserver
 
 The project will be available at 127.0.0.1:8000.
+
+You can access the system on the url address: https://camhu3.ddns.net 
