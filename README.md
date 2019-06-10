@@ -1,8 +1,10 @@
-# project2019
-sains komputer project 2019
+# Sains Komputer Project2019
+Sains Komputer Project 2019
 First, clone the repository to your local machine:
 
-git clone git@github.com:sibtc/django-beginners-guide.git
+Change the "staticfiles" folder name to "static"
+
+git clone https://github.com/kwongliik/project2019.git
 Install the requirements:
 
 pip install -r requirements.txt
@@ -12,6 +14,7 @@ cp .env.example .env
 Create the database:
 
 python manage.py migrate
+
 Finally, run the development server:
 
 python manage.py runserver
