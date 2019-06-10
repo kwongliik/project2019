@@ -56,7 +56,8 @@ urlpatterns = [
     path('pembekal/<int:pk>/stok/<int:stok_pk>/inventori/<int:inventori_pk>/delete/', views.InventoriDeleteView.as_view(), name='delete_inventori'),
     path('search_user/', FilterView.as_view(filterset_class=UserFilter, template_name='filter_user_list.html'), name='search_user'),
     path('search_inventori/', FilterView.as_view(filterset_class=InventoriFilter, template_name='filter_inventori_list.html'), name='search_inventori'),
-    path('upload_image/', accounts_views.simple_upload, name='upload_image'),
+    path('upload_picture/<int:pk>/upload/', accounts_views.model_form_upload, name='upload_picture'),
+    path('upload_picture/<int:pk>/pictures/', accounts_views.filter_pictures, name='uploaded_pictures'),
     path('admin/', admin.site.urls),
 ]
 

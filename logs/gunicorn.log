@@ -383,3 +383,260 @@ Not Found: /favicon.ico
 Not Found: /pembekal/1/stok/1/inventori/2/delete/
 Not Found: /favicon.ico
 Not Found: /favicon.ico
+[2019-06-10 07:10:07 +0800] [1021] [CRITICAL] WORKER TIMEOUT (pid:1148)
+[2019-06-10 07:10:07 +0800] [1021] [CRITICAL] WORKER TIMEOUT (pid:1150)
+[2019-06-10 07:10:07 +0800] [1021] [CRITICAL] WORKER TIMEOUT (pid:1151)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               [2019-06-10 15:53:28 +0800] [1189] [CRITICAL] WORKER TIMEOUT (pid:1363)
+[2019-06-10 15:53:28 +0800] [1189] [CRITICAL] WORKER TIMEOUT (pid:1364)
+[2019-06-10 15:53:28 +0800] [1189] [CRITICAL] WORKER TIMEOUT (pid:1365)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/project2019/inventori/views.py", line 12, in home
+    return render(request, 'home.html', {'pembekals': pembekals})
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/urls/resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'upload_image' not found. 'upload_image' is not a valid view function or pattern name.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/project2019/inventori/views.py", line 12, in home
+    return render(request, 'home.html', {'pembekals': pembekals})
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/urls/resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'uploaded_pictures' not found. 'uploaded_pictures' is not a valid view function or pattern name.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/project2019/inventori/views.py", line 12, in home
+    return render(request, 'home.html', {'pembekals': pembekals})
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/urls/resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'uploaded_pictures' not found. 'uploaded_pictures' is not a valid view function or pattern name.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     [2019-06-10 16:06:39 +0800] [1177] [CRITICAL] WORKER TIMEOUT (pid:1360)
+[2019-06-10 16:06:39 +0800] [1177] [CRITICAL] WORKER TIMEOUT (pid:1361)
+[2019-06-10 16:06:39 +0800] [1177] [CRITICAL] WORKER TIMEOUT (pid:1359)
+Not Found: /favicon.ico
+Internal Server Error: /upload_picture/1/pictures/
+Traceback (most recent call last):
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/project2019/accounts/views.py", line 70, in filter_pictures
+    return render(request, 'pictures.html', {'user':user, 'pictures':pictures})
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: pictures.html
+Not Found: /favicon.ico
+Internal Server Error: /upload_picture/1/pictures/
+Traceback (most recent call last):
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/project2019/accounts/views.py", line 70, in filter_pictures
+    return render(request, 'pictures.html', {'user':user, 'pictures':pictures})
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: pictures.html
+Internal Server Error: /upload_picture/1/pictures/
+Traceback (most recent call last):
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/project2019/accounts/views.py", line 70, in filter_pictures
+    return render(request, 'uploaded_pictures.html', {'user':user, 'pictures':pictures})
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: pictures.html
+Internal Server Error: /upload_picture/1/pictures/
+Traceback (most recent call last):
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/project2019/accounts/views.py", line 70, in filter_pictures
+    return render(request, 'uploaded_pictures.html', {'user':user, 'pictures':pictures})
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/pi/project2019/venv/lib/python3.5/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: pictures.html
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block breadcrumb %}
+  <li class="breadcrumb-item active">List of pictures</li>
+{% endblock %}
+
+{% block content %}
+  <p>Pictures uploaded at:</p>
+    <ul>
+      {% for picture in pictures %}
+      <li>
+        <a href="{{ picture.picture.url }}">{{ picture.picture.url }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+
+  <p><a href="{% url 'home' %}">Return to home</a></p>
+
+{% endblock %}
